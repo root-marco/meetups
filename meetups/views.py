@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 
 def index(request):
+    
     meetups = [
         {'title': 'First meetup', 'location': 'New York', 'slug': 'first-meetup'},
         {'title': 'Second meetup', 'location': 'Paris', 'slug': 'second-meetup'},
@@ -13,8 +14,8 @@ def index(request):
     })
 
 
-def meetup_details(request, meetup_slug):
-    print(meetup_slug)
+def meetup_detail(request, meetup_slug):
+
     selected_meetup = {
         'title': 'A First Meetup',
         'description': 'This is the first meetup!',
