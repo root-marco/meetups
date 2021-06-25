@@ -1,9 +1,8 @@
 {% extends 'meetups/base/base.html' %}
+
 {% load static %}
 
-{% block title %}
-All Meetups
-{% endblock %}
+{% block title %}All Meetups{% endblock %}
 
 {% block site_css %}
 <link rel="stylesheet" href="{% static 'meetups/styles/all-meetups.css' %}">
@@ -13,7 +12,6 @@ All Meetups
 <h1>We got great meetups coming up!</h1>
 {% endblock %}
 
-
 {% block header_content %}
 <p>Find the one that best suits your needs!</p>
 {% endblock %}
@@ -22,7 +20,7 @@ All Meetups
 <section>
   <h2>Upcoming Meetups</h2>
   <ol>
-    {% for meetup_item in meetups.0 %}
+    {% for meetup_item in meetups %}
       {% include 'meetups/includes/meetup-item.html' %}
     {% endfor %}
   </ol>
