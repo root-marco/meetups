@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -81,6 +82,8 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT =  os.path.join(BASE_DIR, 'meetups/static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
