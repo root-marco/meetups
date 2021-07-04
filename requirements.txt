@@ -1,0 +1,8 @@
+asgiref
+autopep8
+Django
+Pillow
+pycodestyle
+pytz
+sqlparse
+toml
